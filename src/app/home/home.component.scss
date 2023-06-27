@@ -1,0 +1,364 @@
+ngb-carousel {
+    max-width: 100%;
+    // margin: 50px auto;
+}
+
+ngb-carousel img {
+    width: 100%;
+    outline: none;
+}
+
+ngb-carousel {
+    width: inherit;
+    height: 80vh;
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+    }
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-item {
+    display: flex !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s;
+    z-index: -1;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    z-index: 20;
+}
+
+.carousel-control-next {
+    z-index: 20;
+}
+
+.carousel-indicators {
+    z-index: 20;
+}
+
+
+.picsum-img-wrapper {
+    img {
+        width: 100vw;
+        height: 80vh;
+        max-width: 100%;
+        display: block;
+        margin: 0;
+
+        @media only screen and (max-width: 768px) {
+            height: auto;
+        }
+    }
+
+
+}
+
+.cap-right {
+    text-align: right;
+
+    @media screen and (max-width: 600px) and (min-width: 250px) {
+        text-align: center;
+    }
+}
+
+.trop-3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2279be;
+}
+
+.cloud-provider {
+    padding: 3%;
+
+    .row {
+        .col-4 {
+            img {
+                @media screen and (max-width: 600px) and (min-width: 250px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.dark-backg {
+    color: #FFF;
+    padding: 3%;
+    background-color: #000;
+
+    .has-text-success {
+        color: #48c78e !important;
+    }
+
+    .row {
+        .col-4 {
+            img {
+                width: 80%;
+                height: auto;
+
+                &.sideImg {
+                    @media screen and (min-width: 768px) {
+                        width: 45%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.cloud-automation {
+    padding: 3%;
+    text-align: center;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.about-us {
+    padding: 3%;
+    background-color: #f4f4f4;
+}
+
+.our-products {
+    padding: 3%;
+
+    .dark-backg {
+        .our-prod-img {
+
+            img {
+                width: 100%;
+
+                @media screen and (max-width: 767px) and (min-width: 250px) {
+                    display: none;
+                }
+            }
+
+            position: relative;
+
+            .card-product {
+                position: absolute;
+                top: 0;
+                width: 100%;
+
+                @media screen and (max-width: 767px) and (min-width: 250px) {
+                    position: unset;
+                }
+
+                .card {
+                    color: #fff;
+                    background-color: transparent;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+
+                    .card-body {
+                        // width: 180px;
+                        padding: 35% 0px;
+
+                        @media screen and (max-width: 767px) and (min-width: 250px) {
+                            padding: 5%;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+.our-service {
+    padding: 3%;
+
+    .dark-backg {
+        padding: 3%;
+
+        .our-prod-img {
+            .our-ser-img {
+                width: 100%;
+
+                @media screen and (max-width: 1024px) and (min-width: 250px) {
+                    display: none;
+                }
+            }
+
+            position: relative;
+
+            .card-services {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                padding: 5%;
+
+                @media screen and (max-width: 1024px) and (min-width: 250px) {
+                    position: unset;
+                }
+
+                .card {
+                    color: #fff;
+                    background-color: transparent;
+                    text-align: center;
+                    padding: 20px;
+
+                    img {
+                        width: 65px;
+                        height: 70px;
+                        margin: auto;
+                    }
+
+                    .card-body {
+                        // width: 180px;
+                        padding: 10% 0px;
+
+                        @media screen and (max-width: 767px) and (min-width: 250px) {
+                            padding: 5%;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.testimonial {
+    padding: 0 0% 3%;
+}
+
+.items {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-slide img {
+    width: 128px;
+    border: 0px solid #fff;
+}
+
+// .our-partners {
+//     padding: 6% 3% 3%;
+// }
+
+.our-partners-1 {
+    padding: 0 3% 5%;
+}
+
+.our-client {
+    text-align: center;
+
+    img {
+        width: 150px !important;
+        max-height: 150px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 767px) and (min-width: 250px) {
+            width: 40% !important;
+            margin: auto;
+        }
+    }
+
+    h6 {
+
+        @media screen and (max-width: 767px) and (min-width: 250px) {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.why-tuple,
+.contact-us {
+    background-color: #FFFBF9;
+    padding: 3%;
+
+    .ul-icons {
+        list-style-type: none;
+        padding: 0;
+
+        img {
+            width: 35px;
+            height: 35px;
+        }
+
+        li {
+            padding: 10px;
+        }
+    }
+}
+
+// .image img {
+//     width: 100%;
+// }
+
+// .text {
+//     background: blak;
+//     padding: 22px 14px;
+//     text-align: justify;
+//     margin-top: 0px;
+// }
+
+// .text h2 {
+//     text-transform: capitalize;
+//     font-weight: 600;
+// }
+
+// .text p {
+//     font-size: 18px;
+
+// }
+
+// .text a {
+//     color: red;
+//     font-size: 20px;
+//     text-transform: capitalize;
+// }
+
+// .asa img {
+//     width: 100%;
+//     margin-top: 72px;
+//     height: 700px;
+//     object-fit: contain;
+// }
+
+// .slider.slider-2 h2 {
+//     color: red;
+// }
+
+
+
+
+
+
+
+
+
+
+
+// .ayush {
+//     color: green;
+//     text-align: center;
+//     width: 100%;
+//     font-size: 35px;
+//     text-shadow: 2px 2px 1px black;
+//     margin-top: 41px;
+//     margin-bottom: 37px;
+// }

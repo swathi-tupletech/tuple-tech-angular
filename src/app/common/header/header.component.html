@@ -1,0 +1,41 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="../../../assets/images/tuple-logo.png"></a>
+            <!-- <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"> -->
+            <span class="navbar-toggler-icon navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"></span>
+            <!-- </button> -->
+        </div>
+        <div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
+            <div class="navbar-nav d-flex ms-auto">
+                <a routerLink="/home" routerLinkActive="router-link-active" class="navbar-item">
+                    <span class="icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <a routerLink="/products" routerLinkActive="router-link-active" class="navbar-item">
+                    Products
+                </a>
+                <a routerLink="/services" routerLinkActive="router-link-active" class="navbar-item">
+                    Services
+                </a>
+                <a routerLink="/home/partners" routerLinkActive="router-link-active" class="navbar-item">
+                    Partners
+                </a>
+                <a routerLink="/digital-transformation" routerLinkActive="router-link-active" class="navbar-item">
+                    Digital Transformation
+                </a>
+                <a routerLink="/contact" routerLinkActive="router-link-active" class="navbar-item">
+                    Contact
+                </a>
+                <div class="navbar-item">
+                    <a target="_blank" class="button is-primary" disabled>
+                        Client Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

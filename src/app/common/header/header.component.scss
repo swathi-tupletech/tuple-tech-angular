@@ -1,0 +1,36 @@
+.navbar-item {
+
+    &.router-link-active {
+        padding-bottom: 5px;
+        border-bottom: 5px solid #2279be;
+    }
+}
+
+.navbar-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+
+        .navbar-brand img {
+            width: 70%;
+        }
+    }
+}
+
+.slick-slider {
+    width: 88%;
+    margin: auto;
+    background: rgb(14, 13, 13);
+}
+
+body .slick-prev,
+body .slick-next {
+    height: 45px;
+    width: 40px;
+    background: grey !important;
+    z-index: 100;
+}

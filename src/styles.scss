@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+.navbar-item,
+.navbar-link {
+    color: #000;
+    display: block;
+    line-height: 1.5;
+    margin: 0.5rem 0.75rem;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    // list-style: circle !important;
+
+    li {
+        // list-style: circle !important;
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 30px;
+        height: 3px;
+        padding: 0;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #FFF !important;
+        background-clip: padding-box;
+        border: 0px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .3;
+        transition: opacity .6s ease;
+    }
+}
+
+
+
+.navbar-header {
+    display: flex;
+}
+
+.btn.btn-primary {
+    background-color: #2279be;
+    border-color: transparent;
+    color: #fff;
+}
+
+// .carousel-caption {
+//     top: 50%;
+//     transform: translate(0%, -50%);
+
+
+//     @media screen and (max-width: 600px) and (min-width: 250px) {
+//         top: 35% !important;
+//         // transform: translate(0%, -50%);
+//     }
+// }
+
+.has-text-danger {
+    color: #f14668 !important;
+}
+
+.has-text-primary {
+    color: #2279be;
+}
+
+.slick-prev:before,
+.slick-next:before {
+
+    color: #2279be !important;
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: center;
+}
+
+.slick-initialized .slick-slide {
+    display: flex !important;
+    justify-content: center;
+}
+
+.carousel-item {
+    position: relative;
+
+    .carousel-caption {
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        height: 25%;
+        transform: translate(0%, -25%);
+
+        &.cap-right {
+
+
+            @media screen and (max-width: 500px) and (min-width: 250px) {
+
+                height: 50% !important;
+                transform: translate(0%, -50%) !important;
+            }
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 500px) {
+            height: 30%;
+            transform: translate(0%, -30%);
+        }
+
+        @media screen and (max-width: 500px) and (min-width: 250px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            height: 45%;
+            transform: translate(0%, -45%);
+        }
+
+        @media screen and (max-width: 350px) and (min-width: 250px) {
+
+            height: 56%;
+            transform: translate(0%, -56%);
+        }
+    }
+}
